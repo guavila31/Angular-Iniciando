@@ -1,13 +1,75 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Projeto01</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script>
+    function funcao1() {
+      let num1 = 10;
+      let num2 = 100;
+
+      som = num1 + num2;
+      sub = num1 - num2;
+      div = num1 / num2;
+      mul = num1 * num2;
+
+      alert(`
+      ${num1} + ${num2} = ${som}
+      ${num1} - ${num2} = ${sub}
+      ${num1} % ${num2} = ${div}
+      ${num1} x ${num2} = ${mul}
+      `)
+    }
+    function funcao2() {
+      let num1 = 10;
+      let num2 = 100;
+      let contador = [];
+      let nome = []
+
+      for (num1; num1 <= num2; num1++) {
+        contador.push(num1);
+        nome.push("Contador:");
+      }
+      alert(`Contador de 10 a 100: ${contador}`)
+    }
+
+    function funcao3() {
+    const num3 = 5
+    const tabuadaX5 = []
+
+    for (i = 1; i < 11; i++) {
+        tabuada = num3 * i
+        tabuadaX5.push(`
+        ${num3} x ${i} = ${tabuada}
+        `)
+    }
+    alert(tabuadaX5)
+}
+  </script>
 </body>
+
 </html>

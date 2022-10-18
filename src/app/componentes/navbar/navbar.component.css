@@ -1,0 +1,11 @@
+.offcanvas-title{
+  color: #af001dba;
+  font-size: 2rem;
+}
+.offcanvas-body a{
+  color: #121212;
+  font-size: 1.5rem;
+}
+.nav-link.active{
+  font-weight: bold;
+}
