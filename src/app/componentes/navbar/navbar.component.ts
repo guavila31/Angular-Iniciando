@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  @Input() estaAutenticado: boolean = false;
 
+  menus: any = ['Lista 1 - JavaScript', 'Lista 2 - TypeScript', 'Lista 3 - Angular I', 'Lista 4 - Angular II']
+  constructor() { }
+  autenticado: boolean = false;
   ngOnInit(): void {
   }
 

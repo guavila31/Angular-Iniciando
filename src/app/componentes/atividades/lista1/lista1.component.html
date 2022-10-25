@@ -2,24 +2,27 @@
   <div class="row">
     <div class="col-md-6">
 
-      <form method="get" action="https://63055f80697408f7edc568ce.mockapi.io/cadastro">
+      <form method="post" action="https://63055f80697408f7edc568ce.mockapi.io/cadastro">
         <div class="shadow-sm p-3 mb-3 bg-white rounded mt-1" style="font-size: 11px;">
           <div class="mb-3">
             <section>
               <label for="" class="form-label">Nome</label>
-              <input name="name" type="text" class="form-control" id="" aria-describedby="helpId" placeholder="Digite aqui..." required>
+              <input name="name" type="text" class="form-control" id="" aria-describedby="helpId"
+                placeholder="Digite aqui..." required>
               <small id="helpId" class="form-text text-muted">Nome Completo</small>
             </section>
 
             <section class="mt-2">
               <label for="" class="form-label">Telefone</label>
-              <input name="telefone" type="text" class="form-control" id="" aria-describedby="helpId" placeholder="" required>
+              <input name="telefone" type="text" class="form-control" id="" aria-describedby="helpId"
+                placeholder="Digite aqui..." required>
               <small id="helpId" class="form-text text-muted">(xx) xxxx-xxxx</small>
             </section>
 
             <section class="mt-2">
               <label for="" class="form-label">Email</label>
-              <input name="email" type="email" class="form-control" id="" aria-describedby="helpId" placeholder="" required>
+              <input name="email" type="email" class="form-control" id="" aria-describedby="helpId"
+                placeholder="Digite aqui..." required>
               <small id="helpId" class="form-text text-muted">email@hotmail.com</small>
               <section class="d-grid mt-3">
                 <button type="submit" class="btn btn-outline-success">Submit</button>
@@ -41,15 +44,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="">
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr class="">
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="" *ngFor="let dadosPessoais of dados">
+              <td>{{dadosPessoais.name}}</td>
+              <td>{{dadosPessoais.telefone}}</td>
+              <td>{{dadosPessoais.email}}</td>
             </tr>
           </tbody>
         </table>
