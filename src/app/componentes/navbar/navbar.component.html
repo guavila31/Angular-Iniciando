@@ -6,8 +6,8 @@
         alt="angular" width="65px">
       Programação Web
     </a>
-    <button *ngIf="estaAutenticado" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar">
+    <button *ngIf="estaAutenticado" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -17,14 +17,10 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Pagina Inicial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Lista 1 - JavaScript</a>
-          </li>
+
           <li *ngFor="let item of menus" class="nav-item">
-            <a class="nav-link" href="#">{{item}}</a>
+            <a class="nav-link" [routerLink]="item.rota" routerLinkActive="active">{{item.titulo}}</a>
+
           </li>
         </ul>
       </div>

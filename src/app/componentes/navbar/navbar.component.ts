@@ -9,7 +9,12 @@ export class NavbarComponent implements OnInit {
 
   @Input() estaAutenticado: boolean = false;
 
-  menus: any = ['Lista 1 - JavaScript', 'Lista 2 - TypeScript', 'Lista 3 - Angular I', 'Lista 4 - Angular II']
+  menus: any = [
+    {rota: 'calculadora', titulo: 'Calculadora'},
+    {rota: 'calcula-media-simples', titulo: 'Calcula Media'},
+    {rota: 'pai', titulo: 'Rota Aninhada'},
+
+  ]
   constructor() { }
   autenticado: boolean = false;
   ngOnInit(): void {

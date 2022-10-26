@@ -9,6 +9,12 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { Lista1Component } from './componentes/atividades/lista1/lista1.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { CalculaMediaSimplesComponent } from './calcula-media-simples/calcula-media-simples.component';
+import { PaiComponent } from './pai/pai.component';
+import { Filho1Component } from './pai/filho1/filho1.component';
+import { Filho2Component } from './pai/filho2/filho2.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +23,18 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     RodapeComponent,
     Lista1Component,
+    CalculadoraComponent,
+    CalculaMediaSimplesComponent,
+    PaiComponent,
+    Filho1Component,
+    Filho2Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CursoModule,
     HttpClientModule,
+    FormsModule,
   ], exports: [
   ],
   providers: [],

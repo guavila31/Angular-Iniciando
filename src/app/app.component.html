@@ -1,14 +1,12 @@
 <!-- NavBar -->
 <header>
-  <app-navbar [estaAutenticado]="autenticado"></app-navbar>
+  <app-navbar class="mb-5" [estaAutenticado]="autenticado"></app-navbar>
 </header>
 
 <!-- Exercicios -->
 <main>
-  <br><br><br><br><br><br><br>
-  <app-lista1></app-lista1>
-  <!-- <app-lista-curso [(num1)]="numero"></app-lista-curso>
-  {{numero}} -->
+<br><br><br><br><br>
+  <!-- <app-lista1></app-lista1> -->
   <div class="container">
     <div class="row">
       <div class="col-12 d-grid">
@@ -16,13 +14,14 @@
           (click)="autenticado = !autenticado">{{autenticado ? 'Logoff' : 'Autenticar'}}</button>
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-md-12">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
 </main>
-
 <!-- Rodape -->
 <footer>
   <app-rodape></app-rodape>
 </footer>
-
-<router-outlet></router-outlet>
