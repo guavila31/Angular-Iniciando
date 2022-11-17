@@ -15,6 +15,13 @@ import { PaiComponent } from './pai/pai.component';
 import { Filho1Component } from './pai/filho1/filho1.component';
 import { Filho2Component } from './pai/filho2/filho2.component';
 import { FormsModule } from '@angular/forms';
+import { ListaExercicioComponent } from './lista-exercicio/lista-exercicio.component';
+import { Exercicio2Component } from './lista-exercicio/exercicio2/exercicio2.component';
+import { DescricaoExerciciosComponent } from './lista-exercicio/descricao-exercicios/descricao-exercicios.component';
+import { Exercicio1Component } from './lista-exercicio/exercicio1/exercicio1.component';
+import { Exercicio3Component } from './lista-exercicio/exercicio3/exercicio3.component';
+import { Exercicio4Component } from './lista-exercicio/exercicio4/exercicio4.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +35,13 @@ import { FormsModule } from '@angular/forms';
     PaiComponent,
     Filho1Component,
     Filho2Component,
+    ListaExercicioComponent,
+    Exercicio2Component,
+    DescricaoExerciciosComponent,
+    Exercicio1Component,
+    Exercicio3Component,
+    Exercicio4Component,
+    UsuarioComponent,
   ],
   imports: [
     BrowserModule,

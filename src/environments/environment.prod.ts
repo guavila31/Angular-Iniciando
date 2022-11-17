@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: false,
+  urlAPI: 'https://63055f80697408f7edc568ce.mockapi.io',
 };

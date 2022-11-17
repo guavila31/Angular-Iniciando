@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="mb-3">
+        <form>
+          <div class="row mt-5">
+            <h3 class="display-5 mb-4">Calcular média</h3>
+            <div class="col-3">
+              <label for="" class="form-label">AC1</label>
+              <input type="number" name="ac1" id="ac1" class="form-control" placeholder="Digite aqui..."
+                aria-describedby="helpId" [(ngModel)]="ac1" [ngClass]="input">
+            </div>
+            <div class="col-3">
+              <label for="" class="form-label">AC2</label>
+              <input type="number" name="ac2" id="ac2" class="form-control" placeholder="Digite aqui..."
+                aria-describedby="helpId" [(ngModel)]="ac2" [ngClass]="input">
+            </div>
+            <div class="col-3">
+              <label for="" class="form-label">AG</label>
+              <input type="number" name="ag" id="ag" class="form-control" placeholder="Digite aqui..."
+                aria-describedby="helpId" [(ngModel)]="ag" [ngClass]="input">
+            </div>
+            <div class="col-3">
+              <label for="" class="form-label">AF</label>
+              <input type="number" name="af" id="af" class="form-control" placeholder="Digite aqui..."
+                aria-describedby="helpId" [(ngModel)]="af" [ngClass]="input">
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-6 mt-3 d-grid">
+            <button type="button" class="btn btn-warning" (click)="calcularMedia()">Calcular Média</button>
+          </div>
+          <div class="col-6 mt-3">
+            <form class="d-flex">
+              <div class="col">
+                <div class="">
+                  <span [ngClass]="statusView">{{status}}</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

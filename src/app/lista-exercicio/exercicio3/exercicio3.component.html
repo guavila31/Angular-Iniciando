@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-5">
+      <div class="mb-3">
+        <form ngNativeValidate>
+          <label for="" class="form-label">RA</label>
+          <input type="number" class="form-control" name="ra" id="ra" aria-describedby="ra" placeholder="Digite o RA..."
+            [(ngModel)]="ra" [ngClass]="input" required>
+
+          <label for="" class="form-label">Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome" aria-describedby="nome"
+            placeholder="Digite o nome..." [(ngModel)]="nome" [ngClass]="input" required>
+
+          <label for="" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+            placeholder="abc@mail.com" [(ngModel)]="email" [ngClass]="input" required>
+
+          <label for="" class="form-label">Celular</label>
+          <input type="number" class="form-control" name="celular" id="celular" aria-describedby="celular"
+            placeholder="Digite o celular..." [(ngModel)]="telefone" [ngClass]="input" required>
+
+          <button type="submit" (click)="cadastro()" [ngClass]="botao">Mostrar Formulario</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

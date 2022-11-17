@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-5">
+      <div class="mb-3">
+        <form>
+          <label for="" class="form-label">Nome do segurado</label>
+          <input type="text" class="form-control" name="nome" id="nome" aria-describedby="nome"
+            placeholder="Digite o nome..." [(ngModel)]="nome">
+
+          <label for="" class="form-label">Sexo</label>
+          <div class="mt-1 mb-2">
+            <input type="radio" class="form-check-input" name="sexo" id="sexo" value="M" [(ngModel)]="sexo">
+            <label for="masc" class="form-check-label" style="margin-right: 10px;">Masculino</label>
+
+            <input type="radio" class="form-check-input" name="sexo" id="sexo" value="F" [(ngModel)]="sexo">
+            <label for="fem" class="form-check-label">Feminino</label>
+          </div>
+
+          <label for="" class="form-label">Idade</label>
+          <input type="number" class="form-control" name="idade" id="idade" aria-describedby="idade"
+            placeholder="Digite a idade..." [(ngModel)]="idade">
+
+          <label for="" class="form-label">Valor</label>
+          <input type="number" class="form-control" name="valor" id="valor" aria-describedby="valor"
+            placeholder="Digite o valor do automovel" [(ngModel)]="valor">
+
+            <label for="" class="form-label">Apolice</label>
+          <!-- <input type="text"  name="apolice" id="apolice" aria-describedby="apolice" > -->
+          <textarea rows="3" class="form-control" [(ngModel)]="apolice" disabled></textarea>
+          <button type="submit" class="btn btn-success mt-3" (click)="calcApolice()">Calcular Apolice</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

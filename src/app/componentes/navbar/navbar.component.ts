@@ -12,7 +12,10 @@ export class NavbarComponent implements OnInit {
   menus: any = [
     {rota: 'calculadora', titulo: 'Calculadora'},
     {rota: 'calcula-media-simples', titulo: 'Calcula Media'},
+    {rota: 'lista1', titulo: 'Lista de pessoas'},
+    {rota: 'usuario', titulo: 'Usuario'},
     {rota: 'pai', titulo: 'Rota Aninhada'},
+    {rota: 'lista-exercicio', titulo: 'Lista de Exercicios'},
 
   ]
   constructor() { }
